@@ -275,7 +275,7 @@ class LUT {
     return null;
   }
 
-  static double _validateAndParse(String s, [double min, double max]) {
+  static double _validateAndParse(String s, [double? min, double? max]) {
     if (s == null || s.isEmpty) {
       throw FormatException('Input data shouldn`t be empty or null: "$s"');
     }
